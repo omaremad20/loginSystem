@@ -1,0 +1,143 @@
+:root {
+    --font-family : "Outfit", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #24353F !important;
+    height: 100vh;
+}
+div.mainBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #24353f !important;
+    border: solid 3px transparent;
+    padding: 5rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 
+                0 6px 6px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: rgb(23, 162, 184);
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 500;
+    font-family: var(--font-family);
+}
+input.inputEditing {
+    all: unset;
+    width: 80%;
+    padding: 0.5rem;
+    /* margin-block: 0.5rem; */
+    border: solid 1px whitesmoke;
+    transition: ease-in-out 0.3s border-color;
+    border-radius: 5px;
+}
+input.inputEditing:focus , input[type = "password"]:focus{
+    border-color: rgb(23, 162, 184);
+}
+button.buttonEditing {
+    all: unset;
+    width: 80%;
+    margin-block: 1rem;
+    padding: 0.5rem;
+    background: transparent;
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: #17A2B8;
+    background-color: transparent;
+    border: 1px solid rgb(23, 162, 184);
+    border-radius: 5px;
+    transition: 0.3s ease-in-out background-color , 0.3s ease-in-out color;
+}
+button.buttonEditing:hover {
+    background-color: #17A2B8;
+    color: rgb(255, 255, 255);
+}
+a#goToHome {
+    all: unset;
+    width: 80%;
+    margin-block: 1rem;
+    padding: 0.5rem;
+    background: transparent;
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: #17A2B8;
+    background-color: transparent;
+    border: 1px solid rgb(23, 162, 184);
+    border-radius: 5px;
+    transition: 0.3s ease-in-out background-color , 0.3s ease-in-out color;
+    cursor: pointer;
+}
+a#goToHome:hover {
+    background-color: #17A2B8;
+    color: rgb(255, 255, 255);
+}
+a#signUP{
+    text-decoration: none;
+    position: relative;
+}
+a#signUP::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10%;
+    width: 0%;
+    height: 1%;
+    background-color: #17A2B8;
+    transition: ease-in-out width 0.3s;
+}
+a#signUP:hover::after {
+    width: 100%;
+}
+input[type= "password"] , input[type = "text"]{
+    all: unset;
+    width: 100%;
+    padding: 0.5rem;
+    margin-block: 1rem;
+    border: solid 1px whitesmoke;
+    transition: ease-in-out 0.3s border-color;
+    border-radius: 5px;
+}
+i.eyePassword {
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
+    right: 0;
+    padding: 10px;
+}
+div.inputPassword {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 85%;
+}
+.alertMsg {
+    font-size: 0.8rem;
+}
+
+
+#alertMSG , #nameIsToken {
+    margin-left: 2.2rem !important;
+}
+.btnInnerAnchor {
+    all: unset;
+}
+p#alertMsgPassword {
+    width: 90%;
+    margin-left: 0.5rem !important;
+}
+input {
+    color: #fff !important;
+}

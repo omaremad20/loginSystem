@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google-Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Google-Fonts -->
+    <title>Login</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/Global.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+</head>
+
+<body>
+
+    <div class="mainBox position-relative">
+        <h1>Smart Login System</h1>
+        <input id="nameInputLog" type="name" class="inputEditing my-3" placeholder="Enter Your First Name"
+            autocomplete="off" value="">
+        <p id="alertMsgName" class="text-danger  p-0 m-0 d-none  w-100   ms-md-5   alertMsg mb-2">The Name Must More
+            Than 2 Characters ...</p>
+        <input id="emailInputLog" type="email" class="inputEditing my-3" placeholder="Enter Your Email"
+            autocomplete="off">
+        <p id="alertMsgEmail" class="text-danger  p-0 m-0  w-100 ms-md-5 d-none  alertMsg mb-2">Email Is Not Valid...
+        </p>
+        <div class="inputPassword position-relative">
+            <input id="passwordInputLog" type="password" class=" my-3" placeholder="Enter Your Password"
+                autocomplete="off">
+            <i class="fa-solid fa-eye-slash eyePassword" id="showPassword"></i>
+        </div>
+        <p id="alertMsgPassword" class="text-danger p-0 m-0  d-none alertMsg mb-2">Password Must Be 8-32 Characters ...
+        </p>
+        <p>You Have An Account? <a href="login.html">Sign In</a></p>
+        <p class="lead text-success d-none" id="successMsg">Success <i class="fa-solid fa-circle-check"></i></p>
+        <p id="nameIsToken" class="text-danger me-5  text-center fs-5 w-100  alertMsg d-none">Email Already Exists</p>
+        <p class="text-danger d-none" id="requiredInputs">All Inputs Is Required <i class="fa-solid fa-circle-info"></i>
+        </p>
+        <button id="saveDataBtn" type="submit" class="buttonEditing btn ">Register</button>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/register.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+body { 
+    background-color: #1D2A32 !important;
+    /* height: 100vh; */
+}
+
+.container {
+    display: flex ;
+    justify-content: space-between ;
+}
+nav.navbar {
+    background-color: #1D2A32 !important;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 
+    0 6px 6px rgba(0, 0, 0, 0.2);
+}
+div.secondbody {
+    height: calc(100vh - 56px);
+    background-color: #1D2A32 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.welcomeBox {
+    background-color: #1D2A32 !important;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 
+    0 6px 6px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+}
+h1 {
+    color: rgb(81, 212, 233) !important;
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 3rem;
+}

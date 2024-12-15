@@ -1,0 +1,24 @@
+@media all and (width < 992px) {
+    input.inputEditing {
+        width: 100% ;
+    }
+    div.inputPassword {
+        width: 107% ;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    p#alertMsgPassword {
+        width: 100%;
+    } 
+    a#goToHome {
+        width: 100%;
+    }
+    .signUpText {
+        font-size: 0.8rem ;
+    } 
+    .alertMsg {
+        font-size: 0.7rem;
+    }
+
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google-Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Google-Fonts -->
+    <title>Login</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/Global.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+</head>
+
+<body>
+
+    <div class="mainBox">
+        <h1>Smart Login System</h1>
+        <input id="loginInput" type="email" class="inputEditing my-3" placeholder="Enter Your Email" autocomplete="off"
+            id="emailInput" value="" />
+        <p class="text-danger align-self-start m-0 p-0 ms-5 d-none" id="emailIncorrect">Incorret Email...</p>
+
+        <div class="inputPassword">
+            <input id="inputPassword" type="password" class="" placeholder="Enter Your Password" autocomplete="off"
+                value="" />
+            <i class="fa-solid fa-eye-slash  eyePassword" id="showPassword"></i>
+        </div>
+        <p class="text-danger d-none  w-75 m-0 p-0 " id="passIncorrect">Incorret Password...</p>
+        <a id="goToHome">
+            <button type="submit" class="btnInnerAnchor " id="btnLogin">Login</button>
+        </a>
+        <p class="text-danger align-self-center m-0 p-0 d-none" id="requiredInputs">All Inputs Is Required <i
+                class="fa-solid fa-circle-info"></i></p>
+        <p class="text-danger align-self-center m-0 p-0 d-none" id="notFoundMsg">User Not Found <i
+                class="fa-solid fa-circle-info"></i></p>
+        <p class="signUpText">Don’t Have An Account? <a href="index.html" id="signUP">Sign Up</a></p>
+    </div>
+    <div class="border-line"></div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/log.js"></script>
+</body>
+
+</html>
